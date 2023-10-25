@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Globalization;
 
+//Exercícios 01
 //Exercício 01
 // int valorA = int.Parse(Console.ReadLine());
 // int valorB = int.Parse(Console.ReadLine());
@@ -48,20 +49,36 @@ using System.Globalization;
 // Console.WriteLine($"VALOR A PAGAR R$ {valorAPagar.ToString("F2")}");
 
 //Exercício 06
-double a, b, c;
-double pi = 3.14159;
-string[] valoresTriangulo = Console.ReadLine().Split(' ');
-a = double.Parse(valoresTriangulo[0]);
-b = double.Parse(valoresTriangulo[1]);
-c = double.Parse(valoresTriangulo[2]);
+//double a, b, c;
+//double pi = 3.14159;
+//string[] valoresTriangulo = Console.ReadLine().Split(' ');
+//a = double.Parse(valoresTriangulo[0]);
+//b = double.Parse(valoresTriangulo[1]);
+//c = double.Parse(valoresTriangulo[2]);
 
-double areaTriangulo = (a * c ) / 2;
-double areaCirculo = pi * c * c;
-double areaTrapezio = ((a + b ) * c) / 2;
-double areaQuadrado = b * b;
-double areaRetangulo = a * b;
-Console.WriteLine($"TRIANGULO: {areaTriangulo.ToString("F3")}");
-Console.WriteLine($"CIRCULO: {areaCirculo.ToString("F3")}");
-Console.WriteLine($"TRAPEZIO: {areaTrapezio.ToString("F3")}");
-Console.WriteLine($"QUADRADO: {areaQuadrado.ToString("F3")}");
-Console.WriteLine($"RETANGULO: {areaRetangulo.ToString("F3")}");
+//double areaTriangulo = (a * c ) / 2;
+//double areaCirculo = pi * c * c;
+//double areaTrapezio = ((a + b ) * c) / 2;
+//double areaQuadrado = b * b;
+//double areaRetangulo = a * b;
+//Console.WriteLine($"TRIANGULO: {areaTriangulo.ToString("F3")}");
+//Console.WriteLine($"CIRCULO: {areaCirculo.ToString("F3")}");
+//Console.WriteLine($"TRAPEZIO: {areaTrapezio.ToString("F3")}");
+//Console.WriteLine($"QUADRADO: {areaQuadrado.ToString("F3")}");
+//Console.WriteLine($"RETANGULO: {areaRetangulo.ToString("F3")}");
+
+//Exercícios 02 estrutura condicional
+
+//Exercício 01 - Pula
+//Exercício 02 - Pula
+
+//Exercício 03
+int a, b;
+string[] valores = Console.ReadLine().Split(' ');
+a = int.Parse(valores[0]);
+b = int.Parse(valores[1]);
+
+if (a % b == 0 || b % a == 0)
+    Console.WriteLine("São Multiplos");
+else
+    Console.WriteLine("Não são Multiplos");
