@@ -84,13 +84,40 @@ using System.Globalization;
 //    Console.WriteLine("Não são Multiplos");
 
 //Exercício 04
-int inicio, fim, duracao;
-string[] valores = Console.ReadLine().Split(' ');
-inicio = int.Parse(valores[0]);
-fim = int.Parse(valores[1]);
+//int inicio, fim, duracao;
+//string[] valores = Console.ReadLine().Split(' ');
+//inicio = int.Parse(valores[0]);
+//fim = int.Parse(valores[1]);
 
-if (inicio < fim)
-    duracao = (fim - inicio);
+//if (inicio < fim)
+//    duracao = (fim - inicio);
+//else
+//    duracao = 24 - inicio + fim;
+//Console.WriteLine($"O JOGO DUROU {duracao} HORAS");
+
+//Exercício 04
+int itemCodigo, quantidade;
+double total;
+string[] input = Console.ReadLine().Split(' ');
+itemCodigo = int.Parse(input[0]);
+quantidade = int.Parse(input[1]);
+
+if (itemCodigo == 1)
+    total = quantidade * 4.00;
+else if (itemCodigo == 2)
+    total = quantidade * 4.50;
+else if (itemCodigo == 3)
+    total = quantidade * 5.00;
+else if (itemCodigo == 4)
+    total = quantidade * 2.00;
+else if (itemCodigo == 5)
+    total = quantidade * 2.00;
+else if (itemCodigo == 6)
+    total = quantidade * 1.50;
 else
-    duracao = 24 - inicio + fim;
-Console.WriteLine($"O JOGO DUROU {duracao} HORAS");
+    total = quantidade * 0;
+
+Console.WriteLine($"Total: R$ {total.ToString("F2")}");
+        
+
+
