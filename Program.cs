@@ -73,12 +73,24 @@ using System.Globalization;
 //Exercício 02 - Pula
 
 //Exercício 03
-int a, b;
-string[] valores = Console.ReadLine().Split(' ');
-a = int.Parse(valores[0]);
-b = int.Parse(valores[1]);
+//int a, b;
+//string[] valores = Console.ReadLine().Split(' ');
+//a = int.Parse(valores[0]);
+//b = int.Parse(valores[1]);
 
-if (a % b == 0 || b % a == 0)
-    Console.WriteLine("São Multiplos");
+//if (a % b == 0 || b % a == 0)
+//    Console.WriteLine("São Multiplos");
+//else
+//    Console.WriteLine("Não são Multiplos");
+
+//Exercício 04
+int inicio, fim, duracao;
+string[] valores = Console.ReadLine().Split(' ');
+inicio = int.Parse(valores[0]);
+fim = int.Parse(valores[1]);
+
+if (inicio < fim)
+    duracao = (fim - inicio);
 else
-    Console.WriteLine("Não são Multiplos");
+    duracao = 24 - inicio + fim;
+Console.WriteLine($"O JOGO DUROU {duracao} HORAS");
