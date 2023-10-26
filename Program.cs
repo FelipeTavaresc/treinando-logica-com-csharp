@@ -95,29 +95,64 @@ using System.Globalization;
 //    duracao = 24 - inicio + fim;
 //Console.WriteLine($"O JOGO DUROU {duracao} HORAS");
 
-//Exercício 04
-int itemCodigo, quantidade;
-double total;
-string[] input = Console.ReadLine().Split(' ');
-itemCodigo = int.Parse(input[0]);
-quantidade = int.Parse(input[1]);
+//Exercício 05
+//int itemCodigo, quantidade;
+//double total;
+//string[] input = Console.ReadLine().Split(' ');
+//itemCodigo = int.Parse(input[0]);
+//quantidade = int.Parse(input[1]);
 
-if (itemCodigo == 1)
-    total = quantidade * 4.00;
-else if (itemCodigo == 2)
-    total = quantidade * 4.50;
-else if (itemCodigo == 3)
-    total = quantidade * 5.00;
-else if (itemCodigo == 4)
-    total = quantidade * 2.00;
-else if (itemCodigo == 5)
-    total = quantidade * 2.00;
-else if (itemCodigo == 6)
-    total = quantidade * 1.50;
-else
-    total = quantidade * 0;
+//if (itemCodigo == 1)
+//    total = quantidade * 4.00;
+//else if (itemCodigo == 2)
+//    total = quantidade * 4.50;
+//else if (itemCodigo == 3)
+//    total = quantidade * 5.00;
+//else if (itemCodigo == 4)
+//    total = quantidade * 2.00;
+//else if (itemCodigo == 5)
+//    total = quantidade * 2.00;
+//else if (itemCodigo == 6)
+//    total = quantidade * 1.50;
+//else
+//    total = quantidade * 0;
 
-Console.WriteLine($"Total: R$ {total.ToString("F2")}");
-        
+//Console.WriteLine($"Total: R$ {total.ToString("F2")}");
+
+//Exercício 06
+//double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+//if (valor > 0 && valor <= 25)
+//    Console.WriteLine("Intervalor [0,25]");
+//else if (valor > 25 && valor <= 50)
+//    Console.WriteLine("Intervalor (25,50]");
+//else if (valor > 50 && valor <= 75)
+//    Console.WriteLine("Intervalor (50,75]");
+//else if (valor > 75 && valor <= 100)
+//    Console.WriteLine("Intervalor (75,100]");
+//else
+//    Console.WriteLine("Fora de intervalor");
+
+//Exercício 07
+string[] coordenadas = Console.ReadLine().Split(' ');
+double x = double.Parse(coordenadas[0], CultureInfo.InvariantCulture);
+double y = double.Parse(coordenadas[1], CultureInfo.InvariantCulture);
+
+if (x == 0.0 && y == 0.0)
+    Console.WriteLine("Origem");
+else if (x > 0.0 && y > 0.0)
+    Console.WriteLine("Q1");
+else if (x < 0.0 && y > 0.0)
+    Console.WriteLine("Q2");
+else if (x < 0.0 && y < 0.0)
+    Console.WriteLine("Q3");
+else if (x > 0.0 && y < 0.0)
+    Console.WriteLine("Q4");
+else if (x == 0)
+    Console.WriteLine("Eixo X");
+else if (y == 0)
+    Console.WriteLine("Eixo Y");
+
+
+
 
 
