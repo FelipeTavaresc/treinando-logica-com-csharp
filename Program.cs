@@ -172,12 +172,36 @@ using System.Globalization;
 
 //Exercícios 03 estrutura while
 //Exercício 01
-int senha = int.Parse(Console.ReadLine());
-while (senha != 2002){
-    Console.WriteLine("Senha inválida");
-    senha = int.Parse(Console.ReadLine());
+//int senha = int.Parse(Console.ReadLine());
+//while (senha != 2002){
+//    Console.WriteLine("Senha inválida");
+//    senha = int.Parse(Console.ReadLine());
+//}
+//Console.WriteLine("Acessso permitido");
+
+//Exercício 2
+
+string[] coordernadas = Console.ReadLine().Split(" ");
+int x = int.Parse(coordernadas[0]);
+int y = int.Parse(coordernadas[1]);
+
+while (x != 0 && y != 0)
+{
+    if (x > 0 && y > 0)
+        Console.WriteLine("Primeiro quadrante");
+    else if(x < 0 && y > 0)
+        Console.WriteLine("Segundo quadrante");
+    else if(x < 0 && y < 0)
+        Console.WriteLine("Terceiro quadrante");
+    else
+        Console.WriteLine("Quarto quadrante");
+
+    coordernadas = Console.ReadLine().Split(" ");
+    x = int.Parse(coordernadas[0]);
+    y = int.Parse(coordernadas[1]);
 }
-Console.WriteLine("Acessso permitido");
+
+
 
 
 
