@@ -179,28 +179,47 @@ using System.Globalization;
 //}
 //Console.WriteLine("Acessso permitido");
 
-//Exercício 2
+//Exercício 02
 
-string[] coordernadas = Console.ReadLine().Split(" ");
-int x = int.Parse(coordernadas[0]);
-int y = int.Parse(coordernadas[1]);
+//string[] coordernadas = Console.ReadLine().Split(" ");
+//int x = int.Parse(coordernadas[0]);
+//int y = int.Parse(coordernadas[1]);
 
-while (x != 0 && y != 0)
+//while (x != 0 && y != 0)
+//{
+//    if (x > 0 && y > 0)
+//        Console.WriteLine("Primeiro quadrante");
+//    else if(x < 0 && y > 0)
+//        Console.WriteLine("Segundo quadrante");
+//    else if(x < 0 && y < 0)
+//        Console.WriteLine("Terceiro quadrante");
+//    else
+//        Console.WriteLine("Quarto quadrante");
+
+//    coordernadas = Console.ReadLine().Split(" ");
+//    x = int.Parse(coordernadas[0]);
+//    y = int.Parse(coordernadas[1]);
+//}
+
+//Exercício 03
+int alcool1 = 0, gasolisa2 = 0, diesel3 = 0; 
+int opcao = int.Parse(Console.ReadLine());
+while (opcao != 4)
 {
-    if (x > 0 && y > 0)
-        Console.WriteLine("Primeiro quadrante");
-    else if(x < 0 && y > 0)
-        Console.WriteLine("Segundo quadrante");
-    else if(x < 0 && y < 0)
-        Console.WriteLine("Terceiro quadrante");
-    else
-        Console.WriteLine("Quarto quadrante");
+    if (opcao == 1)
+        alcool1++;
+    else if (opcao == 2)
+        gasolisa2++;
+    else if (opcao == 3)
+        diesel3++;
 
-    coordernadas = Console.ReadLine().Split(" ");
-    x = int.Parse(coordernadas[0]);
-    y = int.Parse(coordernadas[1]);
+    opcao = int.Parse(Console.ReadLine());
 }
 
+Console.WriteLine("MUITO OBRIGADO");
+Console.WriteLine($"Álcool: {alcool1}");
+Console.WriteLine($"Gasolina: {gasolisa2}");
+Console.WriteLine($"Diesel: {diesel3}");
 
 
 
