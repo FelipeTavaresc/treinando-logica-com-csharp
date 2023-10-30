@@ -154,21 +154,31 @@ using System.Globalization;
 
 
 //Exercício 08
-double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-double imposto;
-if (salario <= 2000.0)
-    imposto = 0.0;
-else if (salario <= 3000.0)
-    imposto = (salario - 2000.0) * 0.8;
-else if (salario <= 4500.0)
-    imposto = (salario - 3000.0) * 0.18 + 1000.0 * 0.08;
-else
-    imposto = (salario - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
+//double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+//double imposto;
+//if (salario <= 2000.0)
+//    imposto = 0.0;
+//else if (salario <= 3000.0)
+//    imposto = (salario - 2000.0) * 0.8;
+//else if (salario <= 4500.0)
+//    imposto = (salario - 3000.0) * 0.18 + 1000.0 * 0.08;
+//else
+//    imposto = (salario - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;
 
-if (imposto == 0)
-    Console.WriteLine("Isento");
-else
-    Console.WriteLine($"R$ {imposto.ToString("F2", CultureInfo.InvariantCulture)}");
+//if (imposto == 0)
+//    Console.WriteLine("Isento");
+//else
+//    Console.WriteLine($"R$ {imposto.ToString("F2", CultureInfo.InvariantCulture)}");
+
+//Exercícios 03 estrutura while
+//Exercício 01
+int senha = int.Parse(Console.ReadLine());
+while (senha != 2002){
+    Console.WriteLine("Senha inválida");
+    senha = int.Parse(Console.ReadLine());
+}
+Console.WriteLine("Acessso permitido");
+
 
 
 
