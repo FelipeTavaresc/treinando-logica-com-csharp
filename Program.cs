@@ -202,24 +202,33 @@ using System.Globalization;
 //}
 
 //Exercício 03
-int alcool1 = 0, gasolisa2 = 0, diesel3 = 0; 
-int opcao = int.Parse(Console.ReadLine());
-while (opcao != 4)
+//int alcool1 = 0, gasolisa2 = 0, diesel3 = 0; 
+//int opcao = int.Parse(Console.ReadLine());
+//while (opcao != 4)
+//{
+//    if (opcao == 1)
+//        alcool1++;
+//    else if (opcao == 2)
+//        gasolisa2++;
+//    else if (opcao == 3)
+//        diesel3++;
+
+//    opcao = int.Parse(Console.ReadLine());
+//}
+
+//Console.WriteLine("MUITO OBRIGADO");
+//Console.WriteLine($"Álcool: {alcool1}");
+//Console.WriteLine($"Gasolina: {gasolisa2}");
+//Console.WriteLine($"Diesel: {diesel3}");
+
+//Exercícios 04 estrutura for
+//Exercício 01
+int x = int.Parse(Console.ReadLine());
+for (int i = 1; i <= x; i++)
 {
-    if (opcao == 1)
-        alcool1++;
-    else if (opcao == 2)
-        gasolisa2++;
-    else if (opcao == 3)
-        diesel3++;
-
-    opcao = int.Parse(Console.ReadLine());
+	if (i % 2 == 1)
+		Console.WriteLine(i);
 }
-
-Console.WriteLine("MUITO OBRIGADO");
-Console.WriteLine($"Álcool: {alcool1}");
-Console.WriteLine($"Gasolina: {gasolisa2}");
-Console.WriteLine($"Diesel: {diesel3}");
 
 
 
