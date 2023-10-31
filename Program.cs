@@ -223,12 +223,26 @@ using System.Globalization;
 
 //Exercícios 04 estrutura for
 //Exercício 01
-int x = int.Parse(Console.ReadLine());
-for (int i = 1; i <= x; i++)
+//int x = int.Parse(Console.ReadLine());
+//for (int i = 1; i <= x; i++)
+//{
+//	if (i % 2 == 1)
+//		Console.WriteLine(i);
+//}
+
+//Exercício 02
+int inVal = 0, outVal = 0;
+int n = int.Parse(Console.ReadLine());
+for (int i = 1; i <= n; i++)
 {
-	if (i % 2 == 1)
-		Console.WriteLine(i);
+    int valor = int.Parse(Console.ReadLine());
+    if (valor >= 10 && valor <= 20)
+        inVal++;
+    else
+        outVal++;
 }
+Console.WriteLine($"{inVal} in");
+Console.WriteLine($"{outVal} out");
 
 
 
