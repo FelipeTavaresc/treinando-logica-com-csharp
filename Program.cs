@@ -287,13 +287,22 @@ using System.Globalization;
 //Console.WriteLine(fat);
 
 //Exercício 06
+//int n = int.Parse(Console.ReadLine());
+//for (int i = 1; i <= n; i++)
+//{
+//    if (n % i == 0)
+//        Console.WriteLine(i);
+//}
+
+
+//Exercício 07
 int n = int.Parse(Console.ReadLine());
 for (int i = 1; i <= n; i++)
 {
-    if (n % i == 0)
-        Console.WriteLine(i);
+    int quadrado = i * i;
+    int cubo = i * i * i;
+    Console.WriteLine($"{i} {quadrado} {cubo}");
 }
-    
 
 
 
