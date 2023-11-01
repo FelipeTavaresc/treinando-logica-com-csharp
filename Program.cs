@@ -246,16 +246,35 @@ using System.Globalization;
 
 
 //Exercício 03 - média ponderada
+//int n = int.Parse(Console.ReadLine());
+//for (int i = 0 ;  i < n ; i++)
+//{
+//    string[] linha = Console.ReadLine().Split(' ');
+//    double a = double.Parse(linha[0], CultureInfo.InvariantCulture);
+//    double b = double.Parse(linha[1], CultureInfo.InvariantCulture);
+//    double c = double.Parse(linha[2], CultureInfo.InvariantCulture);
+
+//    double media = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
+//    Console.WriteLine(media.ToString("F1"));
+//}
+
+//Exercício 04
 int n = int.Parse(Console.ReadLine());
-for (int i = 0 ;  i < n ; i++)
+for (int i = 0; i < n; i++)
 {
     string[] linha = Console.ReadLine().Split(' ');
-    double a = double.Parse(linha[0], CultureInfo.InvariantCulture);
-    double b = double.Parse(linha[1], CultureInfo.InvariantCulture);
-    double c = double.Parse(linha[2], CultureInfo.InvariantCulture);
+    double primeiro = double.Parse(linha[0]);
+    double segundo = double.Parse(linha[1]);
 
-    double media = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
-    Console.WriteLine(media.ToString("F1"));
+    if (segundo == 0)
+    {
+        Console.WriteLine("divisão impossível");
+    }
+    else
+    {
+        double divisao = primeiro / segundo;
+        Console.WriteLine(divisao.ToString("F1"));
+    }
 }
 
 
