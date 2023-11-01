@@ -259,23 +259,32 @@ using System.Globalization;
 //}
 
 //Exercício 04
-int n = int.Parse(Console.ReadLine());
-for (int i = 0; i < n; i++)
-{
-    string[] linha = Console.ReadLine().Split(' ');
-    double primeiro = double.Parse(linha[0]);
-    double segundo = double.Parse(linha[1]);
+//int n = int.Parse(Console.ReadLine());
+//for (int i = 0; i < n; i++)
+//{
+//    string[] linha = Console.ReadLine().Split(' ');
+//    double primeiro = double.Parse(linha[0]);
+//    double segundo = double.Parse(linha[1]);
 
-    if (segundo == 0)
-    {
-        Console.WriteLine("divisão impossível");
-    }
-    else
-    {
-        double divisao = primeiro / segundo;
-        Console.WriteLine(divisao.ToString("F1"));
-    }
-}
+//    if (segundo == 0)
+//    {
+//        Console.WriteLine("divisão impossível");
+//    }
+//    else
+//    {
+//        double divisao = primeiro / segundo;
+//        Console.WriteLine(divisao.ToString("F1"));
+//    }
+//}
+
+//Exercício 05 - fatorial
+int n = int.Parse(Console.ReadLine());
+
+int fat = 1;
+for (int i = 1; i <= n; i++)
+    fat = fat * i;
+
+Console.WriteLine(fat);
 
 
 
